@@ -1,0 +1,2 @@
+2012-12-10 08:30:43,496,496 INFO  [daos] se pudo abrir la base de datos
+2012-12-10 08:32:01,990,990 INFO  [daos] se pudo abrir la base de datos
