@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainwindow.ui'
+# Form implementation generated from reading ui file 'gui_design\mainwindow.ui'
 #
-# Created: Wed Nov 14 08:17:15 2012
+# Created: Tue Dec 11 04:18:28 2012
 #      by: PyQt4 UI code generator 4.9.5
 #
 # WARNING! All changes made in this file will be lost!
@@ -20,9 +20,17 @@ class Ui_MainWindow(object):
         MainWindow.resize(672, 443)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        self.horizontalLayout = QtGui.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout_2.setMargin(3)
+        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        self.stackedWidget = QtGui.QStackedWidget(self.centralwidget)
+        self.stackedWidget.setObjectName(_fromUtf8("stackedWidget"))
+        self.pageListaFamilias = QtGui.QWidget()
+        self.pageListaFamilias.setObjectName(_fromUtf8("pageListaFamilias"))
+        self.horizontalLayout = QtGui.QHBoxLayout(self.pageListaFamilias)
+        self.horizontalLayout.setMargin(3)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        self.frame = QtGui.QFrame(self.centralwidget)
+        self.frame = QtGui.QFrame(self.pageListaFamilias)
         self.frame.setFrameShape(QtGui.QFrame.NoFrame)
         self.frame.setObjectName(_fromUtf8("frame"))
         self.verticalLayout = QtGui.QVBoxLayout(self.frame)
@@ -176,6 +184,11 @@ class Ui_MainWindow(object):
         self.tableView.setObjectName(_fromUtf8("tableView"))
         self.verticalLayout.addWidget(self.tableView)
         self.horizontalLayout.addWidget(self.frame)
+        self.stackedWidget.addWidget(self.pageListaFamilias)
+        self.pageFormularioFamilias = QtGui.QWidget()
+        self.pageFormularioFamilias.setObjectName(_fromUtf8("pageFormularioFamilias"))
+        self.stackedWidget.addWidget(self.pageFormularioFamilias)
+        self.horizontalLayout_2.addWidget(self.stackedWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 672, 18))
@@ -190,12 +203,24 @@ class Ui_MainWindow(object):
         self.toolBar.setObjectName(_fromUtf8("toolBar"))
         MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
         self.actionSalir = QtGui.QAction(MainWindow)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/icos32/icos32/system-log-out.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionSalir.setIcon(icon)
         self.actionSalir.setObjectName(_fromUtf8("actionSalir"))
+        self.actionNueva_Familia = QtGui.QAction(MainWindow)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(_fromUtf8(":/icos32/icos32/document-new.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionNueva_Familia.setIcon(icon1)
+        self.actionNueva_Familia.setObjectName(_fromUtf8("actionNueva_Familia"))
         self.menu_Archivo.addSeparator()
         self.menu_Archivo.addAction(self.actionSalir)
         self.menubar.addAction(self.menu_Archivo.menuAction())
+        self.toolBar.addAction(self.actionNueva_Familia)
+        self.toolBar.addSeparator()
+        self.toolBar.addAction(self.actionSalir)
 
         self.retranslateUi(MainWindow)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -203,6 +228,10 @@ class Ui_MainWindow(object):
         self.label.setText(QtGui.QApplication.translate("MainWindow", "Familias", None, QtGui.QApplication.UnicodeUTF8))
         self.menu_Archivo.setTitle(QtGui.QApplication.translate("MainWindow", "&Archivo", None, QtGui.QApplication.UnicodeUTF8))
         self.toolBar.setWindowTitle(QtGui.QApplication.translate("MainWindow", "toolBar", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionSalir.setText(QtGui.QApplication.translate("MainWindow", "Salir", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSalir.setText(QtGui.QApplication.translate("MainWindow", "&Salir", None, QtGui.QApplication.UnicodeUTF8))
         self.actionSalir.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+X", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionNueva_Familia.setText(QtGui.QApplication.translate("MainWindow", "&Nueva Familia", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionNueva_Familia.setToolTip(QtGui.QApplication.translate("MainWindow", "Nueva Familia", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionNueva_Familia.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+N", None, QtGui.QApplication.UnicodeUTF8))
 
+import actionIcos_rc

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wzrdEncuesta</class>
+ <widget class="QWizard" name="wzrdEncuesta">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>489</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Encuesta</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <property name="options">
+   <set>QWizard::ExtendedWatermarkPixmap|QWizard::HelpButtonOnRight</set>
+  </property>
+  <widget class="QWizardPage" name="wzrdPgDatosGenerales">
+   <property name="title">
+    <string>Datos Generales</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QWizardPage" name="wzrdPgDatosDomicilio">
+   <property name="title">
+    <string>Datos Domiciliares</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources/actionIcos.qrc"/>
+  <include location="resources/backgroundImages.qrc"/>
+ </resources>
+ <connections/>
+</ui>
