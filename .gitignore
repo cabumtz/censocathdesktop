@@ -1,8 +1,9 @@
 #this specific
-#logs/*
+logs/*
 
 #pyqt specific
-
+magmasoft/censocath/view/*_rc.py
+magmasoft/censocath/view/ui_*.py
 
 #python specific
 *.py[cod]
