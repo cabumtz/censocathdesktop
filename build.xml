@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<project name="censocathdesktop" default="build" basedir=".">
+
+	<property file="build.properties" />
+
+	<echo message="censocathdesktop build script" />
+
+
+	<!-- ==================================================================================================== -->
+	<!-- clean -->
+	<!-- ==================================================================================================== -->
+	<target name="clean" >
+
+		<delete verbose="true">
+			<fileset dir="${gui.module.dir}" casesensitive="true">
+				<include name="**/ui_*.py" />
+				<exclude name="__init__.py" />
+			</fileset>
+
+			<fileset dir="${gui.module.resources.dir}" casesensitive="true">
+				<include name="**/*_rc.py" />
+				<exclude name="__init__.py" />
+			</fileset>
+		</delete>
+	</target>
+	<!-- ==================================================================================================== -->
+	<!-- build gui -->
+	<!-- ==================================================================================================== -->
+	<target name="build.gui.design">
+		<exec executable="cmd" output="${gui.module.dir}/ui_mainwindow.py">
+			<arg value="/c" />
+			<arg value="${pyqt.pyuic4}" />
+			<arg value="${gui.design.dir}/mainwindow.ui" />
+		</exec>
+
+
+		<exec executable="cmd" output="${gui.module.dir}/ui_encuestadialog.py">
+			<arg value="/c" />
+			<arg value="${pyqt.pyuic4}" />
+			<arg value="${gui.design.dir}/encuestadialog.ui" />
+		</exec>
+	</target>
+
+	<!-- ==================================================================================================== -->
+	<!-- build resources -->
+	<!-- ==================================================================================================== -->
+	<target name="build.gui.design.resources">
+		<!-- action icos -->
+		<exec executable="${pyqt.pyrcc4}" output="${gui.module.resources.dir}/actionIcos_rc.py">
+			<arg line="${pyqt.pyrcc4.flags}" />
+			<arg value="${gui.design.resources.dir}/actionIcos.qrc" />
+		</exec>
+
+		<!-- background images -->
+		<exec executable="${pyqt.pyrcc4}" output="${gui.module.resources.dir}/backgroundImages_rc.py">
+			<arg line="${pyqt.pyrcc4.flags}" />
+			<arg value="${gui.design.resources.dir}/backgroundImages.qrc" />
+		</exec>
+	</target>
+
+	<!-- ==================================================================================================== -->
+	<!-- build -->
+	<!-- ==================================================================================================== -->
+	<target name="build" depends="build.gui.design, build.gui.design.resources" />
+
+	<!-- ==================================================================================================== -->
+	<!-- run -->
+	<!-- ==================================================================================================== -->
+	<target name="run" depends="build">
+		<!-- execute -->
+		<exec executable="${python.home}/${python.bin}" dir="." >
+			<arg value="-u" />
+			<arg value="${app.main.module.path}" />
+			
+			<env key="PYTHONPATH" path="." />
+		</exec>
+	</target>
+
+</project>

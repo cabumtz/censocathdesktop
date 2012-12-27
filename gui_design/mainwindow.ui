@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>672</width>
-    <height>443</height>
+    <width>535</width>
+    <height>330</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,7 +41,7 @@
             <number>5</number>
            </property>
            <item>
-            <widget class="QLabel" name="label">
+            <widget class="QLabel" name="lblEncuestas">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -467,7 +467,7 @@
               <bool>true</bool>
              </property>
              <property name="text">
-              <string>Familias</string>
+              <string>Encuestas</string>
              </property>
              <property name="indent">
               <number>12</number>
@@ -475,7 +475,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QTableView" name="tableView"/>
+            <widget class="QTableView" name="tblVwEncuestas"/>
            </item>
           </layout>
          </widget>
@@ -492,7 +492,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>672</width>
+     <width>535</width>
      <height>18</height>
     </rect>
    </property>
@@ -516,7 +516,7 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionNueva_Familia"/>
+   <addaction name="actionNueva_Encuesta"/>
    <addaction name="separator"/>
    <addaction name="actionSalir"/>
   </widget>
@@ -532,16 +532,16 @@
     <string>Ctrl+X</string>
    </property>
   </action>
-  <action name="actionNueva_Familia">
+  <action name="actionNueva_Encuesta">
    <property name="icon">
     <iconset resource="resources/actionIcos.qrc">
      <normaloff>:/icos32/icos32/document-new.png</normaloff>:/icos32/icos32/document-new.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Nueva Familia</string>
+    <string>&amp;Nueva Encuesta</string>
    </property>
    <property name="toolTip">
-    <string>Nueva Familia</string>
+    <string>Nueva Encuesta</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>

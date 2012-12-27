@@ -1,3 +1,9 @@
+#this specific
+#logs/*
+
+#pyqt specific
+
+
 #python specific
 *.py[cod]
 
