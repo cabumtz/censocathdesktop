@@ -11,9 +11,28 @@ from magmasoft.censocath.view.ui_mainwindow import Ui_MainWindow
 from magmasoft.censocath.view.ui_encuestadialog import Ui_WzrdEncuesta
 from magmasoft.censocath.model.sqlmodel import FamiliaModel
 from magmasoft.censocath.util.connection import Connection
+from magmasoft.censocath.view.ui_wzrdpgdatosgenerales import Ui_WzrdPgDatosGenerales
+from magmasoft.censocath.view.ui_wzrdpgdatosintegrantes import Ui_WzrdPgDatosIntegrantes
 
 
+class WzrdPgDatosGenerales(QtGui.QWizardPage):
+    
+    def __init__(self, parent=None):
+        super(WzrdPgDatosGenerales, self).__init__(parent)
+        self.ui = Ui_WzrdPgDatosGenerales()
+        self.ui.setupUi(self)
+        pass
+    
 
+
+class WzrdPgDatosIntegrantes(QtGui.QWizardPage):
+    
+    def __init__(self, parent=None):
+        super(WzrdPgDatosIntegrantes, self).__init__(parent)
+        self.ui = Ui_WzrdPgDatosIntegrantes()
+        self.ui.setupUi(self)
+        pass
+    
 
 class EncuestaDialogForm(QtGui.QWizard):
     
@@ -21,6 +40,8 @@ class EncuestaDialogForm(QtGui.QWizard):
         super(EncuestaDialogForm, self).__init__(parent)
         self.ui = Ui_WzrdEncuesta()
         self.ui.setupUi(self)
+        self.addPage( WzrdPgDatosGenerales(self) )
+        self.addPage( WzrdPgDatosIntegrantes(self) )
         pass
 
 
@@ -54,6 +75,7 @@ class MainWindowForm(QtGui.QMainWindow):
     
     @QtCore.pyqtSlot(bool)
     def on_new_encuesta_triggered(self):
+        
         self.__wzrdEncuesta.show()
         pass
     

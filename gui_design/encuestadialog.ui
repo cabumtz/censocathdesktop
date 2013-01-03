@@ -22,17 +22,6 @@
   <property name="options">
    <set>QWizard::ExtendedWatermarkPixmap|QWizard::HelpButtonOnRight</set>
   </property>
-  <widget class="QWizardPage" name="wzrdPgDatosGenerales">
-   <property name="title">
-    <string>Datos Generales</string>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout"/>
-  </widget>
-  <widget class="QWizardPage" name="wzrdPgDatosDomicilio">
-   <property name="title">
-    <string>Datos Domiciliares</string>
-   </property>
-  </widget>
  </widget>
  <resources>
   <include location="resources/actionIcos.qrc"/>

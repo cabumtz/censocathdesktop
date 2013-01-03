@@ -40,6 +40,18 @@
 			<arg value="${pyqt.pyuic4}" />
 			<arg value="${gui.design.dir}/encuestadialog.ui" />
 		</exec>
+		
+		<exec executable="cmd" output="${gui.module.dir}/ui_wzrdpgdatosgenerales.py">
+			<arg value="/c" />
+			<arg value="${pyqt.pyuic4}" />
+			<arg value="${gui.design.dir}/wzrdPgDatosGenerales.ui" />
+		</exec>
+		
+		<exec executable="cmd" output="${gui.module.dir}/ui_wzrdpgdatosintegrantes.py">
+			<arg value="/c" />
+			<arg value="${pyqt.pyuic4}" />
+			<arg value="${gui.design.dir}/wzrdPgDatosIntegrantes.ui" />
+		</exec>
 	</target>
 
 	<!-- ==================================================================================================== -->
@@ -69,7 +81,7 @@
 	<!-- ==================================================================================================== -->
 	<target name="run" depends="build">
 		<!-- execute -->
-		<exec executable="${python.home}/${python.bin}" dir="." >
+		<exec executable="${python.bin.fullpath}" dir="." >
 			<arg value="-u" />
 			<arg value="${app.main.module.path}" />
 			
