@@ -44,14 +44,14 @@ CREATE TABLE "Religion" (
 -- Dumping data for table "Religion"
 --
 
-INSERT INTO "Religion" ("Id", "Nombre") VALUES (1,'CatÃ³lica');
+INSERT INTO "Religion" ("Id", "Nombre") VALUES (1,'Católica');
 INSERT INTO "Religion" ("Id", "Nombre") VALUES (2,'Cristiana');
-INSERT INTO "Religion" ("Id", "Nombre") VALUES (3,'Santos de los Ãšltimos dÃ­as');
-INSERT INTO "Religion" ("Id", "Nombre") VALUES (4,'Testigos de JehovÃ¡');
+INSERT INTO "Religion" ("Id", "Nombre") VALUES (3,'Santos de los Últimos días');
+INSERT INTO "Religion" ("Id", "Nombre") VALUES (4,'Testigos de Jehová');
 INSERT INTO "Religion" ("Id", "Nombre") VALUES (5,'Piedra Angular');
-INSERT INTO "Religion" ("Id", "Nombre") VALUES (6,'Luz del dÃ­a');
+INSERT INTO "Religion" ("Id", "Nombre") VALUES (6,'Luz del día');
 INSERT INTO "Religion" ("Id", "Nombre") VALUES (7,'Mormones');
-INSERT INTO "Religion" ("Id", "Nombre") VALUES (8,'JudÃ­os');
+INSERT INTO "Religion" ("Id", "Nombre") VALUES (8,'Judíos');
 INSERT INTO "Religion" ("Id", "Nombre") VALUES (9,'Budistas');
 INSERT INTO "Religion" ("Id", "Nombre") VALUES (10,'Otros');
 
@@ -94,7 +94,7 @@ CREATE TABLE "Encuestador" (
 
 
 INSERT INTO "Encuestador" ("Id", "Nombre") VALUES (1,'Otro');
-INSERT INTO "Encuestador" ("Id", "Nombre") VALUES (2,'Esperanza MÃ¡rquez MÃ©ndez');
+INSERT INTO "Encuestador" ("Id", "Nombre") VALUES (2,'Esperanza Márquez Méndez');
 
 
 
@@ -136,7 +136,7 @@ CREATE TABLE "Colonia" (
 --
 
 INSERT INTO "Colonia" ("Id", "Nombre") VALUES (1,'San Pablo Xochimehuacan');
-INSERT INTO "Colonia" ("Id", "Nombre") VALUES (2,'Santa BÃƒÂ¡rbara');
+INSERT INTO "Colonia" ("Id", "Nombre") VALUES (2,'Santa Bárbara');
 INSERT INTO "Colonia" ("Id", "Nombre") VALUES (3,'Mariscal');
 INSERT INTO "Colonia" ("Id", "Nombre") VALUES (4,'Barranca Honda');
 INSERT INTO "Colonia" ("Id", "Nombre") VALUES (5,'28 de Octubre');

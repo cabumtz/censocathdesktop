@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>608</width>
-    <height>300</height>
+    <width>642</width>
+    <height>330</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Datos de Familiares</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
@@ -22,7 +25,7 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QSplitter" name="splitter">
         <property name="orientation">
@@ -34,57 +37,142 @@
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QTableView" name="familiares"/>
+           <widget class="QTableView" name="tblVwFamiliares"/>
           </item>
          </layout>
         </widget>
-        <widget class="QGroupBox" name="groupBox_2">
+        <widget class="QGroupBox" name="grpBxDetalle">
          <property name="title">
-          <string>GroupBox</string>
+          <string>Detalle</string>
          </property>
          <layout class="QFormLayout" name="formLayout">
           <item row="0" column="0">
-           <widget class="QLabel" name="label">
+           <widget class="QLabel" name="lblNombre">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Nombre</string>
             </property>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QLineEdit" name="lnEdtNombre"/>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="lblLugarOrigen">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Lugar Origen</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="lnEdtLugarOrigen"/>
           </item>
           <item row="2" column="0">
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="lblSexo">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Sexo</string>
             </property>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_3"/>
+           <widget class="QComboBox" name="cmbBxSexo"/>
           </item>
           <item row="3" column="0">
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="lblEdad">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Edad</string>
             </property>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QLineEdit" name="lineEdit_4"/>
+           <widget class="QSpinBox" name="spnBxEdad"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="lblParentesco">
+            <property name="text">
+             <string>Parentesco</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QComboBox" name="cmbBxParentesco"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="lblReligion">
+            <property name="text">
+             <string>Religión</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QComboBox" name="cmbBxReligion"/>
           </item>
          </layout>
         </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_2">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_3">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </widget>
       </item>
      </layout>

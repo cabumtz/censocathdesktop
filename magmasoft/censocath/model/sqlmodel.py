@@ -5,17 +5,17 @@ Created on 14/11/2012
 '''
 
 # These are only needed for Python v2 but are harmless for Python v3.
-import sip
-import this
-sip.setapi('QString', 2)
-sip.setapi('QVariant', 2)
+#import sip
+#import this
+#sip.setapi('QString', 2)
+#sip.setapi('QVariant', 2)
 
-from PyQt4 import QtCore, QtGui, QtSql
+from PyQt4 import QtCore, QtSql
 
 
 # FamiliaModel
 
-class FamiliaModel(QtSql.QSqlQueryModel):
+class FamiliaModel( QtSql.QSqlQueryModel ):
     '''
     classdocs
     '''

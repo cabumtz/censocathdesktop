@@ -59,3 +59,10 @@ FROM
 --  p."IdFamilia" = 1
 
 
+
+SELECT 
+  e."Id" AS "Id", e."Nombre" AS "Nombre"
+FROM
+  "Encuestador" e
+ORDER BY
+  e."Nombre" ASC
