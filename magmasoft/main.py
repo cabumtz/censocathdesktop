@@ -86,9 +86,10 @@ class EncuestaDialogForm(QtGui.QWizard):
     def __initialize(self):
         self.addPage( WzrdPgDatosGenerales(self) )
         self.addPage( WzrdPgDatosIntegrantes(self) )
-        self.setWizardStyle(QtGui.QWizard.MacStyle)
-        self.setPixmap(QtGui.QWizard.WatermarkPixmap, QtGui.QPixmap(_fromUtf8(":/background/images/imgs/familia_cristiana2.jpg")))
-        self.setPixmap(QtGui.QWizard.BackgroundPixmap, QtGui.QPixmap(_fromUtf8(":/background/images/imgs/familia_cristiana2.jpg")))
+        #self.setWizardStyle(QtGui.QWizard.MacStyle)
+        #self.setWizardStyle(QtGui.QWizard.ModernStyle)
+        #self.setPixmap(QtGui.QWizard.WatermarkPixmap, QtGui.QPixmap(_fromUtf8(":/background/images/imgs/familia_cristiana2.jpg")))
+        #self.setPixmap(QtGui.QWizard.BackgroundPixmap, QtGui.QPixmap(_fromUtf8(":/background/images/imgs/familia_cristiana2.jpg")))
         pass
 
 

@@ -2,6 +2,9 @@
   <qresource prefix="icos32">
     <file>icos32/document-new.png</file>
     <file>icos32/system-log-out.png</file>
+    <file>icos32/edit-clear.png</file>
+    <file>icos32/process-stop.png</file>
+    <file>icos32/document-properties.png</file>
   </qresource>
   <qresource prefix="icosSvg">
     <file>icosSvg/document-new.svg</file>
