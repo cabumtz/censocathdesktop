@@ -1,5 +1,10 @@
 eclipse.preferences.version=1
-encoding//magmasoft/censocath/view/ui_encuestadialog.py=utf-8
-encoding//magmasoft/censocath/view/ui_mainwindow.py=utf-8
-encoding//magmasoft/censocath/view/ui_wzrdpgdatosgenerales.py=utf-8
+encoding//magmasoft/censocath/completer.py=utf-8
+encoding//magmasoft/censocath/daos.py=utf-8
+encoding//magmasoft/censocath/factories.py=utf-8
+encoding//magmasoft/censocath/model/sqlmodel.py=utf-8
+encoding//magmasoft/censocath/services.py=utf-8
+encoding//magmasoft/censocath/util/connection.py=utf-8
+encoding//magmasoft/censocath/util/encoding.py=utf-8
+encoding//magmasoft/censocath/vos.py=utf-8
 encoding//magmasoft/main.py=utf-8
